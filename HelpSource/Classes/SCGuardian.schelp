@@ -1,0 +1,28 @@
+CLASS:: SCGuardian
+SUMMARY:: Public facade for inspection, fallback resolution, protected execution, recovery, and reporting.
+
+METHOD:: inspect
+ARGUMENT:: request
+Return a capability report for the current environment.
+
+METHOD:: resolve
+ARGUMENT:: spec
+ARGUMENT:: policy
+ARGUMENT:: report
+Resolve a request against a capability report and policy.
+
+METHOD:: protect
+ARGUMENT:: func
+ARGUMENT:: policy
+Run user code with cleanup and error reporting.
+
+METHOD:: registry
+Expose the guardian-managed registry.
+
+METHOD:: recover
+ARGUMENT:: level
+Run recovery at `soft`, `medium`, or `hard` level.
+
+METHOD:: report
+ARGUMENT:: payload
+Format a human-readable summary string.

@@ -1,0 +1,11 @@
+(
+    name: "SCGuardian",
+    summary: "Portable SuperCollider runtime inspection, fallback resolution, and recovery helpers.",
+    version: "0.1.0",
+    schelp: "SCGuardian",
+    isCompatible: { true },
+    dependencies: [],
+    author: "Studio Sesma",
+    url: "https://github.com/studio-sesma/SCGuardian",
+    license: "MIT"
+)

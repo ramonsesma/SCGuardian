@@ -1,0 +1,11 @@
+CLASS:: SCGFallbacks
+SUMMARY:: Deterministic fallback resolution for guardian policies.
+
+METHOD:: resolve
+ARGUMENT:: spec
+ARGUMENT:: policy
+ARGUMENT:: report
+Choose the first available fallback from an ordered policy chain.
+
+DESCRIPTION::
+The resolver is deterministic for the same spec, policy, and report. It reports the chosen implementation, degradation state, explanation, and warnings.

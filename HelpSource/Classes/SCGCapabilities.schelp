@@ -1,0 +1,9 @@
+CLASS:: SCGCapabilities
+SUMMARY:: Capability inspection for the local SuperCollider runtime.
+
+METHOD:: inspect
+ARGUMENT:: request
+Inspect requested classes, UGens, Quarks, and runtime details.
+
+DESCRIPTION::
+Returns a stable capability report with `environment`, `classes`, `ugens`, `quarks`, `server`, `warnings`, and `errors`.

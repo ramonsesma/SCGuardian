@@ -1,0 +1,12 @@
+CLASS:: SCGRecovery
+SUMMARY:: Registry-aware recovery for guardian-managed resources.
+
+METHOD:: registry
+Return the opt-in registry used for managed resources.
+
+METHOD:: recover
+ARGUMENT:: level
+Run soft, medium, or hard recovery over registered resources.
+
+DESCRIPTION::
+Recovery is precise by default and only touches resources tracked by the guardian unless the caller opts into stronger behavior.
