@@ -38,7 +38,7 @@ SCGuardian.protect({
 ## Install
 
 ```supercollider
-Quarks.install("https://github.com/studio-sesma/SCGuardian");
+Quarks.install("https://github.com/ramonsesma/SCGuardian");
 ```
 
 ## Public API

@@ -6,6 +6,6 @@
     isCompatible: { true },
     dependencies: [],
     author: "Studio Sesma",
-    url: "https://github.com/studio-sesma/SCGuardian",
+    url: "https://github.com/ramonsesma/SCGuardian",
     license: "MIT"
 )
