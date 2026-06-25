@@ -1,4 +1,11 @@
-# SCGuardian
+﻿# SCGuardian
+
+![SuperCollider Quarks cover](assets/supercollider-quarks-cover.png)
+
+[![Release](https://img.shields.io/github/v/release/ramonsesma/SCGuardian)](https://github.com/ramonsesma/SCGuardian/releases)
+[![Validate](https://img.shields.io/github/actions/workflow/status/ramonsesma/SCGuardian/validate.yml?branch=main&label=validate)](https://github.com/ramonsesma/SCGuardian/actions/workflows/validate.yml)
+[![License](https://img.shields.io/github/license/ramonsesma/SCGuardian)](https://github.com/ramonsesma/SCGuardian/blob/main/LICENSE)
+[![Quark](https://img.shields.io/badge/quark-0.1.0-blue)](https://github.com/ramonsesma/SCGuardian/releases/tag/0.1.0)
 
 `SCGuardian` is a portable `sclang`-only Quark for three jobs:
 
@@ -65,3 +72,4 @@ TestSCGuardian.run;
 ```
 
 License: MIT.
+

@@ -158,11 +158,20 @@ TestSCGuardian : UnitTest {
     }
 
     test_documentation_smoke_check {
-        this.assert(File.exists("quarks/SCGuardian/README.md"));
-        this.assert(File.exists("quarks/SCGuardian/HelpSource/Classes/SCGCapabilities.schelp"));
-        this.assert(File.exists("quarks/SCGuardian/HelpSource/Classes/SCGFallbacks.schelp"));
-        this.assert(File.exists("quarks/SCGuardian/HelpSource/Classes/SCGRecovery.schelp"));
-        this.assert(File.exists("quarks/SCGuardian/HelpSource/Classes/SCGuardian.schelp"));
+        var root;
+
+        root = [".", "..", "quarks/SCGuardian"].detect({ |candidate|
+            File.exists(candidate +/+ "README.md")
+        });
+
+        this.assert(root.notNil);
+        this.assert(File.exists(root +/+ "README.md"));
+        this.assert(File.exists(root +/+ "HelpSource/Classes/SCGCapabilities.schelp"));
+        this.assert(File.exists(root +/+ "HelpSource/Classes/SCGFallbacks.schelp"));
+        this.assert(File.exists(root +/+ "HelpSource/Classes/SCGRecovery.schelp"));
+        this.assert(File.exists(root +/+ "HelpSource/Classes/SCGuardian.schelp"));
+        this.assert(File.exists(root +/+ "assets/supercollider-quarks-cover.png"));
+        this.assert(File.exists(root +/+ "examples/quickstart.scd"));
     }
 
     test_inspect_resolve_protect_round_trip {
